@@ -1,0 +1,321 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-image: url(images/brick.jpg);
+    background-size: cover;
+    display: block;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button {
+    outline: none;
+    border: none;
+
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.logo1 {
+    max-width: 4.5%;
+    height: auto;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+main {
+    width: 100%;
+    height: 700px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    background-color: rgb(9, 70, 49);
+    box-shadow: 2px 2-x 20px rgb(76, 233, 178);
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 68px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 10px;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: aqua;
+    letter-spacing: 6px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    border-radius: 2px;
+    background-color: rgb(252, 252, 232);
+    color: black;
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+}
+
+.active {
+    background-color: rgb(252, 252, 232);
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+}
+
+nav .menu-btn {
+    display: none;
+}
+
+.title {
+    display: inline-block;
+    color: rgb(0, 2, 0);
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 30px;
+    color: rgb(9, 70, 49);
+}
+
+b {
+    color: rgb(9, 70, 49);
+}
+
+.searchbar {
+    position: absolute;
+    top: 3%;
+    left: 40%
+}
+
+input {
+    border: 3px solid rgb(9, 70, 49);
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+
+.sbtn {
+    position: absolute;
+    top: 20%;
+    left: 88%
+}
+
+.material-icons {
+    color: black;
+}
+
+.wishlist {
+    position: relative;
+    left: 760px;
+}
+
+.cart {
+    position: relative;
+    left: 790px;
+}
+
+.profile {
+    position: relative;
+    left: 815px;
+    top: 30%;
+}
+
+.material-icons:hover {
+    color: rgb(17, 211, 33);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.rev-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.rev-heading h1 {
+    font-size: 2rem;
+    font-weight: 300px;
+    background-color: rgb(9, 70, 49);
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 2px 13px 2px 13px;
+    position: relative;
+    top: 40px;
+}
+
+/* ---------------------Cart pages----------------- */
+.products-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px; */
+    max-width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    background-color: rgb(9, 70, 49);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+}
+
+.products-container .cross {
+    font-size: 25px;
+    color: aqua;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products-container .booki {
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid white;
+    border-top: 4px solid white;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.product-title {
+    width: 45%;
+    border-bottom: 1px solid aqua;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity {
+    width: 26%;
+    border-bottom: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.total {
+    width: 14%;
+    border-bottom: 1px solid aqua;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid aqua;
+    font-weight: bold;
+
+}
+
+.products ion-icon {
+    cursor: pointer;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray; */
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 85%;
+}
+
+/* .basketTotal {
+    width: 10%;
+} */
+.cartmain {
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.buynow {
+    background-color: rgb(252, 252, 232);
+    border-radius: 10px;
+    color: black;
+    /* box-shadow: 2px 2px 20px rgb(76, 233, 178); */
+    padding: 6px;
+    left: 42%;
+    color: rgb(9, 70, 49);
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid aqua;
+    font-weight: 600;
+
+}

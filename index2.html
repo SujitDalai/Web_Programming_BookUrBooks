@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="bookclass.css">
+</head>
+
+<body>
+    <section class="totalcontainer">
+        <div class="container">
+            <div class="rev-heading">
+                <h1>&#10026; ADD BOOKS &#10026;</h1>
+            </div>
+            <div class="terms">REQUEST FOR A BOOK WHICH YOU NEED *</div>
+            <form id="book-form">
+                <div>
+                    <label for="title">TITLE</label>
+                    <input type="text" id="title" class="u-full-width" style="border: 2px solid rgb(9, 70, 49);border-radius: 13px;">
+                </div>
+                <div>
+                    <label for="author">AUTHOR</label>
+                    <input type="text" id="author" class="u-full-width" style="border: 2px solid rgb(9, 70, 49);border-radius: 13px;">
+                </div>
+                <div>
+                    <label for="isbn">ISBN</label>
+                    <input type="text" id="isbn" class="u-full-width" style="border: 2px solid rgb(9, 70, 49);border-radius: 13px;">
+                </div>
+                <div>
+                    <input type="submit" value="SUBMIT" class="u-full-width" style="background-color: rgb(9, 70, 49);width: 30%;left: 35%;border-radius: 50px; color: white; font-size: 16px;">
+                </div>
+            </form>
+
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>ISBN</th>
+                        <th>REMOVE</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="BookClass.js" async></script>
+</body>
+
+</html>

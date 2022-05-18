@@ -1,0 +1,238 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-image: url(images/brick.jpg);
+    background-size: cover;
+    display:block;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+
+}
+button{
+    outline: none;
+    border: none;
+
+}
+input{
+    outline: none;
+    border: none;
+}
+.logo1{
+    max-width: 4.5%;
+    height: auto;
+    border-radius: 100%;
+    margin: 5px;
+}
+main{
+    width: 100%;
+    height: 700px;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 30px;
+    background-color: rgb(9, 70, 49);
+    box-shadow: 2px 2-x 20px rgb(76, 233, 178);
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 68px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 8px;
+    padding: 0px 10px;
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: aqua;
+    letter-spacing: 6px;
+    transition: 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    border-radius: 2px;
+    background-color: rgb(252, 252, 232) ;
+    color: black;
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+}
+.active{
+    background-color: rgb(252, 252, 232);
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+}
+nav .menu-btn{
+    display: none;
+}
+
+.title{
+    display: inline-block; 
+    color: rgb(0, 2, 0);
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 30px;
+    color: rgb(9, 70, 49);
+}
+b{
+    color: rgb(9, 70, 49);
+}
+ .searchbar{
+   position: absolute;
+   top: 3%;
+   left:40%
+ }
+input{
+    border: 3px solid rgb(9, 70, 49);
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 0px 10px;
+}
+.sbtn{
+    position: absolute;
+   top: 20%;
+   left:88%
+}
+
+.material-icons{
+    color: black;
+}
+.wishlist{
+    position: relative;
+    left: 760px;
+}
+.cart{
+    position: relative;
+    left: 790px;
+}
+.profile{
+    position: relative;
+    left: 815px;
+    top: 30%;
+}
+.material-icons:hover{
+    color: rgb(17, 211, 33);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+#rev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+}
+.rev-heading{
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.rev-heading h1{
+font-size: 2rem;
+font-weight: 300px;
+background-color: rgb(9, 70, 49);
+color: aliceblue;
+padding: 10px 20px;
+border-radius: 2px 13px 2px 13px;
+}
+/* .rev-heading span{
+    font-size: 1.3rem;
+    color :rgb(9, 70, 49);
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    } */
+    .rev-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    width: 100%;
+    float: left;
+    
+    }
+    .rev-box{
+        width: 950px;
+        box-shadow: 2px 2px 30px rgb(180, 241, 236);
+        padding: 20px;
+        margin: 15px;
+        cursor: pointer;
+        background-color: rgb(9, 70, 49);
+        border: 2px;
+        border-style: solid;
+        border-color: rgb(239, 247, 247);
+        color: aqua;
+        border-radius: 6px 30px 6px 30px;
+    }
+    .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        border: 1.5px;
+        border-color: aliceblue;
+        border-style: solid;
+    }
+    .profile-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .profile-user{
+        display:flex;
+        flex-direction: column;
+    }
+    .name-user{
+        display: flex;
+        flex-direction: column;
+    }
+    .name-user strong{
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+    .name-user span{
+        color: rgb(5, 78, 143);
+        font-size: 0.8rem;
+    }
+    .reviews{
+        color: rgb(216, 216, 77);
+    }
+    .client-comment p{
+        font-size: 0.9rem;
+        color: aliceblue;
+        text-align: justify;
+    }
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form - MongoDB</title>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container center">
+        <div class="row">
+            <!-- <div class="col-md-3"> -->
+        </div>
+        <!-- <div class="col-md-6 main"> -->
+        <form action="/sign_up" method="post">
+            <h1>Create Account</h1>
+            <div class="txt_field">
+                <input type="text" class="box" id="name" name="name" required />
+                <span></span>
+                <label>Enter Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" class="box" id="email" name="email" required />
+                <span></span>
+                <label>Enter Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" class="box" id="phno" name="phno" required />
+                <span></span>
+                <label>Enter Phone no</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" class="box" id="password" name="password" required />
+                <span></span>
+                <label>Password</label>
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <input type="submit" value="Submit" id="submit" />
+            <div class="signup_link">
+                By creating an account you agree to our <a href="#"> Terms & Privacy</a>
+            </div>
+        </form>
+    </div>
+    <!-- <div class="col-md-3">
+    </div> -->
+    <!-- </div>
+    </div> -->
+
+</body>
+
+</html>

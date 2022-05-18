@@ -1,0 +1,92 @@
+/* Order Page */
+body{
+    background-image: url(images/Blur_background.jpeg);
+    background-size: cover;
+    position: absolute;
+}
+section{
+    position: relative;
+    left: 380px;
+    width: 65%;
+    height: 530px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: rgb(255, 247, 230);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(9, 70, 49);
+    box-shadow: 2px 2px 20px rgb(76, 233, 178);
+    justify-content: center;
+}
+.order .row{
+    padding: 2rem;
+    box-shadow: 0.5rem 1rem black;
+    background: rgb(190, 244, 248);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: .5rem;
+}
+.image img{
+    width: 340px;
+    height: 280px;
+    border: 2px;
+    border-style: solid;
+    color: rgb(9, 70, 49);
+    border-radius: 0.5rem;
+    padding: 8px;
+}
+.order .row .image{
+    flex: 1 1 30rem;
+}
+.order .row .image img{
+    height: 40px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+ 
+    
+}
+.order .row form{
+    flex: 1 1 50rem;
+    padding: 1rem;
+}
+.order .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order .row form .inputBox input, .order .row form textarea{
+    padding:1rem;
+    margin:1rem 0;
+    font-size: 1.7rem;
+    color:#333;
+    text-transform: none;
+    border:.8rem solid rgb(9, 70, 49);
+    border-radius: .5rem;
+    width:49%;
+  }
+  .order .row form textarea{
+    width:100%;
+    height:15rem;
+  }
+  .addr{
+      margin-bottom: 20px;
+  }
+  
+  .btn{
+    background-color: rgb(9, 70, 49);
+    position: absolute;
+    left:40%;
+    color: rgb(255, 255, 255);
+    top: 520px;
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    border-radius: 10px;
+  }
